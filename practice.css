@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+}
+
+.container-left, .container-right {
+    display: flex;
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*background-color: rgb(255, 215, 177);
+    border-radius: 25px 25px 25px 25px;*/
+}
+
+.portrait {
+    height: 100%;
+    background-color:salmon ;
+    padding: 0 10px;
+}
+
+.container-left .portrait {
+    margin-right: 10px;
+    border-radius: 25px 0 0 25px;
+}
+
+.container-right .portrait {
+    margin-left: 10px;
+    border-radius: 0 25px 25px 0;
+}
+
+.portrait img {
+    height: 100%;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top {
+    height: 100px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    background-color: coral;
+    justify-content: center;
+    line-height: 100px;;
+}
+
+.container-left .top {
+    border-radius: 0 25px 0 0;
+}
+
+.container-right .top {
+    border-radius: 25px 0 0 0;
+}
+
+.top h2 {
+    font-family: 'Heebo';
+    font-size: 60px;
+    padding-left: 25px;
+}
+
+.bottom {
+    height: 300px;
+    overflow: auto;
+    background-color: lightsalmon;
+}
+
+.container-left .bottom {
+    border-radius: 0 0 25px 0;
+}
+
+.container-right .bottom {
+    border-radius: 0 0 0 25px;
+}
+
+.bottom p {
+    font-family: 'Heebo';
+    font-size: 20px;
+    padding: 25px;
+}
+
+.bg {
+    width: auto;
+    height: auto;
+    background-color: orange;
+}
